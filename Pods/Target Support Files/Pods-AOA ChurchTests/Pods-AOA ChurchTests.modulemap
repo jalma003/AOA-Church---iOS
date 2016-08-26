@@ -1,0 +1,6 @@
+framework module Pods_AOA_ChurchTests {
+  umbrella header "Pods-AOA ChurchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

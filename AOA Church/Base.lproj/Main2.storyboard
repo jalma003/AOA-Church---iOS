@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AOA_Church" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="2ZX-Zj-udd">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2ZX-Zj-udd" secondAttribute="height" multiplier="1:1" id="z59-Im-pPg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="z59-Im-pPg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="z59-Im-pPg"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bB-zG-yf2" userLabel="Bible">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="r3K-Vc-wd1"/>
+                                    <constraint firstAttribute="width" constant="75" id="tJQ-hg-cCz"/>
+                                </constraints>
+                                <state key="normal" image="Bible"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r3K-Vc-wd1"/>
+                                        <exclude reference="tJQ-hg-cCz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="r3K-Vc-wd1"/>
+                                        <include reference="tJQ-hg-cCz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="bible_button" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzT-nY-eHP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbb-76-V9J" userLabel="Web">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ALW-Xp-IIA"/>
+                                    <constraint firstAttribute="height" constant="75" id="dAE-3O-ZBv"/>
+                                </constraints>
+                                <state key="normal" image="Web"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ALW-Xp-IIA"/>
+                                        <exclude reference="dAE-3O-ZBv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ALW-Xp-IIA"/>
+                                        <include reference="dAE-3O-ZBv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="web_button" destination="BYZ-38-t0r" eventType="touchUpInside" id="91I-8I-zsq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-hk-Sdg" userLabel="Donate">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="D3s-iM-hXm"/>
+                                    <constraint firstAttribute="height" constant="75" id="aY2-ny-wME"/>
+                                </constraints>
+                                <state key="normal" image="Donate"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D3s-iM-hXm"/>
+                                        <exclude reference="aY2-ny-wME"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="D3s-iM-hXm"/>
+                                        <include reference="aY2-ny-wME"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="give_button" destination="BYZ-38-t0r" eventType="touchUpInside" id="X27-uo-s8u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-EV-p5Q" userLabel="Instagram">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="DUC-0X-g5S"/>
+                                    <constraint firstAttribute="width" constant="75" id="MN6-7w-UeZ"/>
+                                </constraints>
+                                <state key="normal" image="Instagram"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DUC-0X-g5S"/>
+                                        <exclude reference="MN6-7w-UeZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DUC-0X-g5S"/>
+                                        <include reference="MN6-7w-UeZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="instagram_button" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNR-be-HGg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-0z-vKA" userLabel="Facebook">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8NA-eJ-v9Y"/>
+                                    <constraint firstAttribute="width" constant="75" id="cfl-Ps-e5w"/>
+                                </constraints>
+                                <state key="normal" image="Facebook"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8NA-eJ-v9Y"/>
+                                        <exclude reference="cfl-Ps-e5w"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8NA-eJ-v9Y"/>
+                                        <include reference="cfl-Ps-e5w"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="facebook_button" destination="BYZ-38-t0r" eventType="touchUpInside" id="DgU-hu-dcq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AOA Church" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwF-oi-4Cz">
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure Online Giving" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-b6-DFu">
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit aoachurch.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBG-Jv-WmR">
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activites" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEx-Jl-sir">
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ3-8W-gTa" userLabel="Calendar">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="CQj-J7-AjL"/>
+                                    <constraint firstAttribute="height" constant="75" id="m7W-iv-cvh"/>
+                                    <constraint firstAttribute="width" secondItem="WQ3-8W-gTa" secondAttribute="height" multiplier="1:1" id="xQb-BQ-aTf"/>
+                                </constraints>
+                                <state key="normal" image="Calendar"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CQj-J7-AjL"/>
+                                        <exclude reference="m7W-iv-cvh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CQj-J7-AjL"/>
+                                        <include reference="m7W-iv-cvh"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="calendar" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y6U-H6-pbo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bbb-76-V9J" firstAttribute="centerX" secondItem="ob5-0z-vKA" secondAttribute="centerX" id="59V-tm-qzA"/>
+                            <constraint firstItem="fsb-b6-DFu" firstAttribute="centerY" secondItem="BBG-Jv-WmR" secondAttribute="centerY" id="6K2-FI-XHt"/>
+                            <constraint firstItem="WwF-oi-4Cz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Zs-By-sXF"/>
+                            <constraint firstAttribute="trailing" secondItem="WwF-oi-4Cz" secondAttribute="trailing" constant="30" id="9hw-UO-P8z"/>
+                            <constraint firstItem="pEx-Jl-sir" firstAttribute="centerX" secondItem="WQ3-8W-gTa" secondAttribute="centerX" id="II3-DP-ojl"/>
+                            <constraint firstItem="WwF-oi-4Cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLX-yk-Zea"/>
+                            <constraint firstItem="2ZX-Zj-udd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="KcR-YB-YPo"/>
+                            <constraint firstItem="6bB-zG-yf2" firstAttribute="centerY" secondItem="ob5-0z-vKA" secondAttribute="centerY" id="Ngz-nv-7dQ"/>
+                            <constraint firstItem="fsb-b6-DFu" firstAttribute="centerX" secondItem="Mzs-hk-Sdg" secondAttribute="centerX" id="Ouc-4g-uiO"/>
+                            <constraint firstItem="fsb-b6-DFu" firstAttribute="top" secondItem="Mzs-hk-Sdg" secondAttribute="bottom" constant="7.5" id="Oxy-kw-y4C"/>
+                            <constraint firstItem="BBG-Jv-WmR" firstAttribute="centerX" secondItem="Bbb-76-V9J" secondAttribute="centerX" id="PZh-yL-viK"/>
+                            <constraint firstItem="WQ3-8W-gTa" firstAttribute="leading" secondItem="Mzs-hk-Sdg" secondAttribute="trailing" constant="30" id="RCV-VV-0vH"/>
+                            <constraint firstItem="2ZX-Zj-udd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RqS-Ky-nIe"/>
+                            <constraint firstItem="Mzs-hk-Sdg" firstAttribute="leading" secondItem="6bB-zG-yf2" secondAttribute="trailing" constant="-25" id="YBf-zC-zw5"/>
+                            <constraint firstItem="Bbb-76-V9J" firstAttribute="top" secondItem="6bB-zG-yf2" secondAttribute="bottom" constant="30" id="Yzz-eq-YcQ"/>
+                            <constraint firstItem="6bB-zG-yf2" firstAttribute="leading" secondItem="ob5-0z-vKA" secondAttribute="trailing" constant="30" id="aAV-Sn-tlM"/>
+                            <constraint firstItem="Mzs-hk-Sdg" firstAttribute="top" secondItem="6bB-zG-yf2" secondAttribute="bottom" constant="30" id="aae-Yc-ZJg"/>
+                            <constraint firstItem="WwF-oi-4Cz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dfy-TF-ETa"/>
+                            <constraint firstItem="Mzs-hk-Sdg" firstAttribute="centerX" secondItem="6bB-zG-yf2" secondAttribute="centerX" id="fGw-UG-Jp5"/>
+                            <constraint firstItem="4Cd-EV-p5Q" firstAttribute="centerY" secondItem="6bB-zG-yf2" secondAttribute="centerY" id="g0J-iL-7wi"/>
+                            <constraint firstItem="6bB-zG-yf2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hKA-yM-RG3"/>
+                            <constraint firstItem="pEx-Jl-sir" firstAttribute="baseline" secondItem="fsb-b6-DFu" secondAttribute="baseline" id="hdR-Ux-mvQ"/>
+                            <constraint firstItem="6bB-zG-yf2" firstAttribute="top" secondItem="WwF-oi-4Cz" secondAttribute="bottom" constant="40" id="iOI-l9-AmC"/>
+                            <constraint firstItem="WwF-oi-4Cz" firstAttribute="top" secondItem="2ZX-Zj-udd" secondAttribute="bottom" constant="30" id="lO8-Mf-Sut"/>
+                            <constraint firstAttribute="trailing" secondItem="2ZX-Zj-udd" secondAttribute="trailing" constant="30" id="ouw-e2-PcX"/>
+                            <constraint firstItem="WwF-oi-4Cz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="qd0-CW-zbO"/>
+                            <constraint firstItem="4Cd-EV-p5Q" firstAttribute="leading" secondItem="6bB-zG-yf2" secondAttribute="trailing" constant="30" id="sLS-70-EEC"/>
+                            <constraint firstItem="2ZX-Zj-udd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="slr-vB-cic"/>
+                            <constraint firstItem="6bB-zG-yf2" firstAttribute="leading" secondItem="Bbb-76-V9J" secondAttribute="trailing" constant="-25" id="ynM-lx-aEY"/>
+                            <constraint firstItem="WQ3-8W-gTa" firstAttribute="top" secondItem="4Cd-EV-p5Q" secondAttribute="bottom" constant="30" id="zIA-g2-Sol"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2ZX-Zj-udd"/>
+                                <exclude reference="6bB-zG-yf2"/>
+                                <exclude reference="Bbb-76-V9J"/>
+                                <exclude reference="Mzs-hk-Sdg"/>
+                                <exclude reference="4Cd-EV-p5Q"/>
+                                <exclude reference="ob5-0z-vKA"/>
+                                <exclude reference="WwF-oi-4Cz"/>
+                                <exclude reference="fsb-b6-DFu"/>
+                                <exclude reference="BBG-Jv-WmR"/>
+                                <exclude reference="pEx-Jl-sir"/>
+                                <exclude reference="WQ3-8W-gTa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="g0J-iL-7wi"/>
+                                <exclude reference="sLS-70-EEC"/>
+                                <exclude reference="Ngz-nv-7dQ"/>
+                                <exclude reference="aAV-Sn-tlM"/>
+                                <exclude reference="hKA-yM-RG3"/>
+                                <exclude reference="iOI-l9-AmC"/>
+                                <exclude reference="ynM-lx-aEY"/>
+                                <exclude reference="PZh-yL-viK"/>
+                                <exclude reference="59V-tm-qzA"/>
+                                <exclude reference="Yzz-eq-YcQ"/>
+                                <exclude reference="YBf-zC-zw5"/>
+                                <exclude reference="aae-Yc-ZJg"/>
+                                <exclude reference="fGw-UG-Jp5"/>
+                                <exclude reference="RCV-VV-0vH"/>
+                                <exclude reference="zIA-g2-Sol"/>
+                                <exclude reference="8Zs-By-sXF"/>
+                                <exclude reference="9hw-UO-P8z"/>
+                                <exclude reference="JLX-yk-Zea"/>
+                                <exclude reference="dfy-TF-ETa"/>
+                                <exclude reference="lO8-Mf-Sut"/>
+                                <exclude reference="qd0-CW-zbO"/>
+                                <exclude reference="6K2-FI-XHt"/>
+                                <exclude reference="Ouc-4g-uiO"/>
+                                <exclude reference="Oxy-kw-y4C"/>
+                                <exclude reference="II3-DP-ojl"/>
+                                <exclude reference="hdR-Ux-mvQ"/>
+                                <exclude reference="KcR-YB-YPo"/>
+                                <exclude reference="RqS-Ky-nIe"/>
+                                <exclude reference="ouw-e2-PcX"/>
+                                <exclude reference="slr-vB-cic"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2ZX-Zj-udd"/>
+                                <include reference="6bB-zG-yf2"/>
+                                <include reference="Bbb-76-V9J"/>
+                                <include reference="Mzs-hk-Sdg"/>
+                                <include reference="4Cd-EV-p5Q"/>
+                                <include reference="ob5-0z-vKA"/>
+                                <include reference="WwF-oi-4Cz"/>
+                                <include reference="fsb-b6-DFu"/>
+                                <include reference="BBG-Jv-WmR"/>
+                                <include reference="pEx-Jl-sir"/>
+                                <include reference="WQ3-8W-gTa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="g0J-iL-7wi"/>
+                                <include reference="sLS-70-EEC"/>
+                                <include reference="Ngz-nv-7dQ"/>
+                                <include reference="aAV-Sn-tlM"/>
+                                <include reference="hKA-yM-RG3"/>
+                                <include reference="iOI-l9-AmC"/>
+                                <exclude reference="ynM-lx-aEY"/>
+                                <include reference="PZh-yL-viK"/>
+                                <include reference="59V-tm-qzA"/>
+                                <include reference="Yzz-eq-YcQ"/>
+                                <exclude reference="YBf-zC-zw5"/>
+                                <include reference="aae-Yc-ZJg"/>
+                                <include reference="fGw-UG-Jp5"/>
+                                <include reference="RCV-VV-0vH"/>
+                                <include reference="zIA-g2-Sol"/>
+                                <include reference="8Zs-By-sXF"/>
+                                <include reference="9hw-UO-P8z"/>
+                                <include reference="JLX-yk-Zea"/>
+                                <exclude reference="dfy-TF-ETa"/>
+                                <include reference="lO8-Mf-Sut"/>
+                                <include reference="qd0-CW-zbO"/>
+                                <include reference="6K2-FI-XHt"/>
+                                <include reference="Ouc-4g-uiO"/>
+                                <include reference="Oxy-kw-y4C"/>
+                                <include reference="II3-DP-ojl"/>
+                                <include reference="hdR-Ux-mvQ"/>
+                                <exclude reference="KcR-YB-YPo"/>
+                                <include reference="RqS-Ky-nIe"/>
+                                <exclude reference="ouw-e2-PcX"/>
+                                <include reference="slr-vB-cic"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192" y="336.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bible" width="341" height="341"/>
+        <image name="Calendar" width="85" height="85"/>
+        <image name="Donate" width="170" height="170"/>
+        <image name="Facebook" width="666" height="666"/>
+        <image name="Instagram" width="341" height="341"/>
+        <image name="Logo" width="1108" height="1108"/>
+        <image name="Web" width="170" height="170"/>
+    </resources>
+</document>
