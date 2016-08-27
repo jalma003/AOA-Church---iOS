@@ -14,30 +14,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AOA ChurchTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-AOA ChurchUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>495A088AB4B6867A822B97AE51B6C7FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8CDC270A11CD67769715971686143819</key>
 		<dict>
 			<key>primary</key>
 			<true/>

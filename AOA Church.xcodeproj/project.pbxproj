@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8741890E7B7B4B10F9D2D2CD /* Pods_AOA_Church.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F5504498994F8F2E53C53E /* Pods_AOA_Church.framework */; };
-		A1A5BE774D51CA60E5924BFA /* Pods_AOA_ChurchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB14E8866BD95372675E0C32 /* Pods_AOA_ChurchUITests.framework */; };
 		B204049E1CD3D428001F117E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204049D1CD3D428001F117E /* AppDelegate.swift */; };
 		B20404A01CD3D428001F117E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204049F1CD3D428001F117E /* ViewController.swift */; };
 		B20404A31CD3D428001F117E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20404A11CD3D428001F117E /* Main.storyboard */; };
 		B20404A51CD3D428001F117E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20404A41CD3D428001F117E /* Assets.xcassets */; };
 		B20404A81CD3D428001F117E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20404A61CD3D428001F117E /* LaunchScreen.storyboard */; };
-		B20404B31CD3D428001F117E /* AOA_ChurchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20404B21CD3D428001F117E /* AOA_ChurchTests.swift */; };
-		B20404BE1CD3D428001F117E /* AOA_ChurchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20404BD1CD3D428001F117E /* AOA_ChurchUITests.swift */; };
 		B20DE9B61D6A8F1200F4381B /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20DE9B51D6A8F1200F4381B /* YoutubeViewController.swift */; };
 		B20DE9B81D6A8FC900F4381B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20DE9B71D6A8FC900F4381B /* Video.swift */; };
 		B20DE9BA1D6A90A500F4381B /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20DE9B91D6A90A500F4381B /* VideoModel.swift */; };
+		B20E02671D70D3BF00524FC2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E02661D70D3BF00524FC2 /* Event.swift */; };
 		B2A3DF681D6ABFEF00EEEC13 /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A3DF671D6ABFEF00EEEC13 /* VideoDetailController.swift */; };
-		F7E85DE40F4982198149A77F /* Pods_AOA_ChurchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D55F25980B4865359E7E8F /* Pods_AOA_ChurchTests.framework */; };
+		B2DF27421D70EFB50017D783 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF27411D70EFB50017D783 /* EventModel.swift */; };
+		B2DF27461D70F5910017D783 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DF27451D70F5910017D783 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A74382D918BFFC3E27DFA89 /* Pods-AOA ChurchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA ChurchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOA ChurchTests/Pods-AOA ChurchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		11F5504498994F8F2E53C53E /* Pods_AOA_Church.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOA_Church.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B1CAE4BC8FEACC0B5F05106 /* Pods-AOA ChurchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA ChurchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOA ChurchUITests/Pods-AOA ChurchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B204049A1CD3D428001F117E /* AOA Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AOA Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B204049D1CD3D428001F117E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B204049F1CD3D428001F117E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,21 +49,18 @@
 		B20404A71CD3D428001F117E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20404A91CD3D428001F117E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20404AE1CD3D428001F117E /* AOA ChurchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AOA ChurchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20404B21CD3D428001F117E /* AOA_ChurchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOA_ChurchTests.swift; sourceTree = "<group>"; };
-		B20404B41CD3D428001F117E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20404B91CD3D428001F117E /* AOA ChurchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AOA ChurchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20404BD1CD3D428001F117E /* AOA_ChurchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOA_ChurchUITests.swift; sourceTree = "<group>"; };
-		B20404BF1CD3D428001F117E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20DE9B51D6A8F1200F4381B /* YoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YoutubeViewController.swift; path = ../YoutubeViewController.swift; sourceTree = "<group>"; };
 		B20DE9B71D6A8FC900F4381B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		B20DE9B91D6A90A500F4381B /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		B20E02661D70D3BF00524FC2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B2A3DF671D6ABFEF00EEEC13 /* VideoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailController.swift; sourceTree = "<group>"; };
+		B2DF27411D70EFB50017D783 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		B2DF27451D70F5910017D783 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B7D55F25980B4865359E7E8F /* Pods_AOA_ChurchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOA_ChurchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B94EFE948CBB5FC3BA0850 /* Pods-AOA Church.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA Church.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOA Church/Pods-AOA Church.release.xcconfig"; sourceTree = "<group>"; };
 		BB14E8866BD95372675E0C32 /* Pods_AOA_ChurchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOA_ChurchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB81B9FB7A89A7AA1511A0F /* Pods-AOA Church.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA Church.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOA Church/Pods-AOA Church.debug.xcconfig"; sourceTree = "<group>"; };
-		C9F5AFAE1FA73A1EC6FB1CFA /* Pods-AOA ChurchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA ChurchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOA ChurchTests/Pods-AOA ChurchTests.release.xcconfig"; sourceTree = "<group>"; };
-		E6853A8867613C8914104A4D /* Pods-AOA ChurchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOA ChurchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOA ChurchUITests/Pods-AOA ChurchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E85DE40F4982198149A77F /* Pods_AOA_ChurchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A5BE774D51CA60E5924BFA /* Pods_AOA_ChurchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +94,6 @@
 			children = (
 				BFB81B9FB7A89A7AA1511A0F /* Pods-AOA Church.debug.xcconfig */,
 				B8B94EFE948CBB5FC3BA0850 /* Pods-AOA Church.release.xcconfig */,
-				0A74382D918BFFC3E27DFA89 /* Pods-AOA ChurchTests.debug.xcconfig */,
-				C9F5AFAE1FA73A1EC6FB1CFA /* Pods-AOA ChurchTests.release.xcconfig */,
-				E6853A8867613C8914104A4D /* Pods-AOA ChurchUITests.debug.xcconfig */,
-				9B1CAE4BC8FEACC0B5F05106 /* Pods-AOA ChurchUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -114,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				B204049C1CD3D428001F117E /* AOA Church */,
-				B20404B11CD3D428001F117E /* AOA ChurchTests */,
-				B20404BC1CD3D428001F117E /* AOA ChurchUITests */,
 				B204049B1CD3D428001F117E /* Products */,
 				73B0F1BB18F79CC41EED27D1 /* Pods */,
 				E5205A971922BE8D81F167C0 /* Frameworks */,
@@ -140,6 +126,9 @@
 				B20DE9B51D6A8F1200F4381B /* YoutubeViewController.swift */,
 				B2A3DF671D6ABFEF00EEEC13 /* VideoDetailController.swift */,
 				B20DE9B71D6A8FC900F4381B /* Video.swift */,
+				B2DF27451D70F5910017D783 /* CalendarViewController.swift */,
+				B20E02661D70D3BF00524FC2 /* Event.swift */,
+				B2DF27411D70EFB50017D783 /* EventModel.swift */,
 				B20DE9B91D6A90A500F4381B /* VideoModel.swift */,
 				B20404A11CD3D428001F117E /* Main.storyboard */,
 				B20404A41CD3D428001F117E /* Assets.xcassets */,
@@ -147,24 +136,6 @@
 				B20404A91CD3D428001F117E /* Info.plist */,
 			);
 			path = "AOA Church";
-			sourceTree = "<group>";
-		};
-		B20404B11CD3D428001F117E /* AOA ChurchTests */ = {
-			isa = PBXGroup;
-			children = (
-				B20404B21CD3D428001F117E /* AOA_ChurchTests.swift */,
-				B20404B41CD3D428001F117E /* Info.plist */,
-			);
-			path = "AOA ChurchTests";
-			sourceTree = "<group>";
-		};
-		B20404BC1CD3D428001F117E /* AOA ChurchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B20404BD1CD3D428001F117E /* AOA_ChurchUITests.swift */,
-				B20404BF1CD3D428001F117E /* Info.plist */,
-			);
-			path = "AOA ChurchUITests";
 			sourceTree = "<group>";
 		};
 		E5205A971922BE8D81F167C0 /* Frameworks */ = {
@@ -461,10 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20E02671D70D3BF00524FC2 /* Event.swift in Sources */,
+				B2DF27421D70EFB50017D783 /* EventModel.swift in Sources */,
 				B2A3DF681D6ABFEF00EEEC13 /* VideoDetailController.swift in Sources */,
 				B20404A01CD3D428001F117E /* ViewController.swift in Sources */,
 				B20DE9B81D6A8FC900F4381B /* Video.swift in Sources */,
 				B20DE9B61D6A8F1200F4381B /* YoutubeViewController.swift in Sources */,
+				B2DF27461D70F5910017D783 /* CalendarViewController.swift in Sources */,
 				B20DE9BA1D6A90A500F4381B /* VideoModel.swift in Sources */,
 				B204049E1CD3D428001F117E /* AppDelegate.swift in Sources */,
 			);
@@ -474,7 +448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20404B31CD3D428001F117E /* AOA_ChurchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20404BE1CD3D428001F117E /* AOA_ChurchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +622,6 @@
 		};
 		B20404C61CD3D428001F117E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A74382D918BFFC3E27DFA89 /* Pods-AOA ChurchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "AOA ChurchTests/Info.plist";
@@ -664,7 +635,6 @@
 		};
 		B20404C71CD3D428001F117E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F5AFAE1FA73A1EC6FB1CFA /* Pods-AOA ChurchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "AOA ChurchTests/Info.plist";
@@ -679,7 +649,6 @@
 		};
 		B20404C91CD3D428001F117E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6853A8867613C8914104A4D /* Pods-AOA ChurchUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "AOA ChurchUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -692,7 +661,6 @@
 		};
 		B20404CA1CD3D428001F117E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B1CAE4BC8FEACC0B5F05106 /* Pods-AOA ChurchUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "AOA ChurchUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

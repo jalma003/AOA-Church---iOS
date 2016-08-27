@@ -85,10 +85,10 @@ class ViewController: UIViewController
 	
 	
 	@IBAction func calendar() {
-		let urlStr = "https://aoachurch.com/mobile-calendar"
-		let URL = NSURL(string: urlStr)
-		let webVC = SFSafariViewController(URL: URL!)
-		presentViewController(webVC, animated: true, completion: nil)
+//		let urlStr = "https://aoachurch.com/mobile-calendar"
+//		let URL = NSURL(string: urlStr)
+//		let webVC = SFSafariViewController(URL: URL!)
+//		presentViewController(webVC, animated: true, completion: nil)
 
 	}
     
