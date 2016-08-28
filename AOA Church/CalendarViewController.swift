@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import QuartzCore
 
 class CalendarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, EventModelDelegate {
     let Google_API_KEY = "AIzaSyD-e5MLRGFjYdXPxh9HfVDL8acrZGoA3jo"
@@ -27,6 +28,8 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,41 +84,23 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
                 label.text = events[indexPath.row].startTime + " - " + events[indexPath.row].endTime
             }
         }
+        else
+        {
+            label.text = nil
+        }
+    
+        let view = cell.viewWithTag(4)! as UIView
+        view.layer.cornerRadius = 5
+        view.layer.masksToBounds = false
         
-//        let videotitle = videos[indexPath.row].videoTitle
-//        
-//        let label = cell.viewWithTag(2) as! UILabel
-//        label.text = videotitle
-//        
-//        
-//        //Contruct video thumbnail URL
-//        let videoThumbnailURLString = videos[indexPath.row].videoThumbnailURL
-//        
-//        //Create NSURL object
-//        let videoThumbnailURL = NSURL(string: videoThumbnailURLString)
-//        
-//        if videoThumbnailURL != nil
-//        {
-//            //NSURL reques object
-//            let request = NSURLRequest(URL: videoThumbnailURL!)
-//            
-//            //Create NSURL session
-//            let session = NSURLSession.sharedSession()
-//            
-//            //Create a datastack and pass in request
-//            let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data:NSData?, response:NSURLResponse?, error:NSError?) in
-//                
-//                dispatch_async(dispatch_get_main_queue(), {
-//                    // Get a reference to the image view element of the cell
-//                    let imageView = cell.viewWithTag(1) as! UIImageView
-//                    
-//                    // Create an image object from the data and assign it into the image view
-//                    imageView.image = UIImage(data: data!)
-//                })
-//            })
-//            dataTask.resume()
-//            
-//        }
+        view.layer.shadowColor = UIColor.blackColor().colorWithAlphaComponent(0.2).CGColor
+        view.layer.shadowOffset = CGSize(width: 1, height: 1)
+        view.layer.shadowOpacity = 0.8
+        
+        let content_view = cell.viewWithTag(5)! as UIView
+        content_view.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0)
+        
+        
         return cell
     }
     

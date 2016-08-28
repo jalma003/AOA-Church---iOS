@@ -31,12 +31,11 @@ class EventModel: NSObject {
         var dateString = dateFormatter.stringFromDate(date)
         
 //        Fetch videos dynamically throught the youtube data API
-        Alamofire.request(.GET, "https://www.googleapis.com/calendar/v3/calendars/" + Calendar_ID + "/events", parameters:["timeMin":dateString, "singleEvents":"true", "orderBy":"startTime", "key":Google_API_KEY, "maxResults":20], encoding: ParameterEncoding.URL, headers: nil).responseJSON { (response) in
+        Alamofire.request(.GET, "https://www.googleapis.com/calendar/v3/calendars/" + Calendar_ID + "/events", parameters:["timeMin":dateString, "singleEvents":"true", "orderBy":"startTime", "key":Google_API_KEY, "maxResults":40], encoding: ParameterEncoding.URL, headers: nil).responseJSON { (response) in
             
             if let JSON = response.result.value {
                 
                 var arrayOfEvents = [Event]()
-                
                 print(JSON)
                 
                 for event in JSON["items"] as! NSArray
@@ -57,6 +56,7 @@ class EventModel: NSObject {
                         dateString = event.valueForKeyPath("start.date") as! String
                         dateFormatter.dateFormat = "yyyy-MM-dd"
                         date = dateFormatter.dateFromString(dateString)!
+                        
                     }
                     else
                     {
@@ -78,11 +78,14 @@ class EventModel: NSObject {
                     
                     
                     //End Date
+                    
+                    var end_date_check = false
                     if event.valueForKeyPath("end.date") != nil
                     {
                         dateString = event.valueForKeyPath("end.date") as! String
                         dateFormatter.dateFormat = "yyyy-MM-dd"
                         date = dateFormatter.dateFromString(dateString)!
+                        end_date_check = true
                     }
                     else
                     {
@@ -91,16 +94,20 @@ class EventModel: NSObject {
                         date = dateFormatter.dateFromString(dateString)!
                         dateFormatter.dateFormat = "h:mm a"
                         eventObj.endTime = dateFormatter.stringFromDate(date)
+                        end_date_check = true
                     }
                     
-                    dateFormatter.dateFormat = "EEE, MMM d"
-                    eventObj.endDate = dateFormatter.stringFromDate(date)
-                    
-                    dateFormatter.dateFormat = "MM"
-                    eventObj.endMonth = dateFormatter.stringFromDate(date)
-                    
-                    dateFormatter.dateFormat = "dd"
-                    eventObj.endDay = dateFormatter.stringFromDate(date)
+                    if end_date_check
+                    {
+                        dateFormatter.dateFormat = "EEE, MMM d"
+                        eventObj.endDate = dateFormatter.stringFromDate(date)
+                        
+                        dateFormatter.dateFormat = "MM"
+                        eventObj.endMonth = dateFormatter.stringFromDate(date)
+                        
+                        dateFormatter.dateFormat = "dd"
+                        eventObj.endDay = dateFormatter.stringFromDate(date)
+                    }
                     
                     if event.valueForKeyPath("location") != nil
                     {
